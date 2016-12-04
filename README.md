@@ -23,11 +23,11 @@ Development
 
 The following tools are needed to build hgc from source:
 
-* JDK version 6/7 from <http://www.java.com> if Java is not available.
+* JDK version 6/78 from <http://www.java.com> if Java is not available.
   Note that JDK is preinstalled on Mac OS X and available via package manager
   on many Linux systems.
-* Scala (2.11.6)
-* sbt (0.13.8)
+* Scala (2.11.8)
+* sbt (0.13.13)
 
 The project follows general sbt architecture, therefore normal sbt
 commands can be used to build the library: compile, doc, test,
