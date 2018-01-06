@@ -11,3 +11,5 @@ scalacOptions ++= Seq("-optimize", "-deprecation")
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
 libraryDependencies += "net.whily" %% "chinesecalendar" % "0.2.1-SNAPSHOT"
+
+libraryDependencies += "net.whily" %% "scasci" % "0.0.1-SNAPSHOT"

@@ -10,7 +10,7 @@ Chinese calendar is a Scala library for Chinese Calendar.
 
 Features to include:
 
-* Historical maps of China between AD 152 to 317.
+* Historical maps of China between BC 772 to AD 1644.
 
 For more information about hgc, please go to
   <https://github.com/whily/hgc>
