@@ -375,5 +375,111 @@ object Place {
         ren 陝州 三門峽市 // 三門峽市陝州區 To be confirmed
         ren 虢州 靈寶市 // To be confirmed
         ren 蒲州 永濟市 // 永濟市西南蒲州鎮 To be confirmed
+        // update 长安 34.266667 108.9 Province // To be confirmed
+        ren 长安 西安
+        ren 奉天 乾縣 // To be confirmed
+        ren 涇州 涇川 // To be confirmed
+        ren 原州 固原 // To be confirmed
+        ren 邠州 彬縣 // To be confirmed
+        ren 寧州 寧縣 // To be confirmed
+        ren 慶州 慶陽 // To be confirmed
+        ren 鄜州 富縣 // To be confirmed
+        ren 坊州 黃陵 // To be confirmed
+        ren 丹州 宜川 // To be confirmed
+        ren 延州 延安市 // 延安市東北  To be confirmed
+        ren 靈州 吳忠 // To be confirmed
+        ren 夏州 靖邊 // 靖邊縣北白城子  To be confirmed
+        ren 鹽州 定邊 //  To be confirmed
+        ren 綏州 綏德 //  To be confirmed
+        ren 銀州 橫山 // 橫山縣東黨岔鎮） To be confirmed
+        ren 豐州 五原 //五原縣南?? To be confirmed
+        ren 勝州 准格爾旗 // 准格爾旗東北十二連城 GPS coordinates is for 准格爾旗）  To be confirmed
+        ren 麟州 神木 // To be confirmed
+        ren 西受降城 巴彥淖爾市 // To be confirmed
+        ren 中受降城 包頭 // To be confirmed
+        ren 東受降城 呼和浩特 // To be confirmed
+        ren 忠州 忠縣 // To be confirmed
+        ren 潭州 長沙
+        ren 邵州 邵陽
+        ren 武岡 城步
+        ren 衡州 衡陽
+        ren 單于都護府 和林格爾 // 和林格爾北的土城子古城， searched on maps.bing.com for 古城子遗址 then looked up in http://dbsgeo.com/latlon/）
+        ren 魏州 大名 // To be confirmed
+        ren 博州 聊城 // To be confirmed
+        ren 相州 安陽 // To be confirmed
+        ren 貝州 清河 // To be confirmed
+        ren 衛州 輝縣 // To be confirmed
+        ren 澶州 濮陽 // To be confirmed
+        ren 蔡州 汝南 // To be confirmed
+        ren 申州 信陽 // To be confirmed
+        ren 光州 潢川 // To be confirmed
+        ren 恆州 正定 // To be confirmed
+        ren 趙州 趙縣 // To be confirmed
+        // update 幽州 39.916667 116.383333 Capital
+        ren 幽州 北京
+        ren 檀州 密雲 //  To be confirmed
+        ren 薊州 薊縣 // To be confirmed
+        ren 媯州 懷來 // To be confirmed
+        ren 莫州 任丘 // 任丘北  To be confirmed
+        ren 瀛州 河間 // To be confirmed
+        ren 平州 盧龍 // To be confirmed
+        ren 營州 昌黎 // 治今遼寧朝陽，唐末遷至今河北昌黎  To be confirmed
+        ren 淄州 淄川 // To be confirmed
+        ren 齊州 濟南 // To be confirmed
+        ren 沂州 臨沂 // To be confirmed
+        ren 密州 諸城 // To be confirmed
+        ren 海州 連雲港 // 治今江蘇連雲港西南海州鎮  To be confirmed
+        ren 登州 蓬萊 // To be confirmed
+        ren 曹州 菏澤 // To be confirmed
+        ren 濮州 鄄城 // To be confirmed
+        ren 鄆州 東平 // To be confirmed
+        ren 鄯州 海東 //  治今青海省海東市樂都區 To be confirmed
+        ren 秦州 天水 //  治今甘肅省天水市秦州區 To be confirmed
+        ren 河州 臨夏 // To be confirmed
+        ren 渭州 隴西 // To be confirmed
+        ren 武州 武都 // To be confirmed
+        ren 洮州 臨潭 // To be confirmed
+        ren 岷州 臨洮 // To be confirmed
+        ren 廓州 貴德 // To be confirmed
+        ren 疊州 迭部 // To be confirmed
+        ren 宕州 舟曲 // To be confirmed
+        ren 涼州 武威
+        ren 甘州 張掖
+        ren 肅州 酒泉
+        // update 瓜州 甘肅省瓜州縣鎖陽城遺址 Confirmed
+        ren 沙州 敦煌 // 敦煌沙州城遺址 Confirmed
+        ren 庭州 吉木萨尔 // 吉木萨尔县城北12公里北庭乡,北庭故城. Confirmed
+        ren 伊州 哈密 // 哈密市伊州区 Confirmed
+        ren 西州 吐鲁番 // 吐鲁番市东南高昌故城  Confirmed
+        ren 龟兹 库车
+        ren 焉耆 博格达沁故城
+        ren 疏勒 喀什
+        ren 于阗 和田 // 和田西部的约特干 (Not consistent with 中国历史地图集)
+        ren 碎叶 托克馬克 // 即今阿克·贝希姆遗址，位於今吉尔吉斯斯坦楚河州托克馬克市西南8公里处. To be confirmed
+        ren 孽多城 吉爾吉特
+        ren 怛羅斯 塔拉茲
+        ren 代州 代縣 //  To be confirmed
+        ren 嵐州 嵐縣  // To be confirmed
+        ren 汾州 汾陽 // To be confirmed
+        ren 遼州 左權 //  To be confirmed
+        ren 沁州 沁源 // To be confirmed
+        ren 石州 呂梁 // 治今山西呂梁市離石區  To be confirmed
+        ren 憲州 婁煩 // To be confirmed
+        ren 益州 成都
+        ren 維州 理縣 // 理縣東北  To be confirmed
+        ren 润州 镇江 // To be confirmed
+        ren 昇州 南京
+        ren 宣州 宣城
+        ren 歙州 歙縣
+        ren 饶州 鄱陽
+        ren 江州 九江
+        ren 容州 北流
+        ren 邕州 南寧 // 南寧市 (coordinates is based on current 南寧市 Should be 治所在宣化县（今广西壮族自治区南宁市南）in Tang dynasty
+        ren 橫州 橫縣
+        ren 賓州 賓陽
+        ren 桂州 桂林
+        // update 交州 21.028472 105.854167 Capital
+        ren 交州 河內
+        ren 邏些城 拉薩
   """
 }
