@@ -19,10 +19,13 @@ class SpatialTemporalDatabaseTest extends FunSpec with Matchers {
         add 长安 34.266667 108.9 Prefecture
         add 武關 33.71 110.35 Town
     唐高祖武德二年 clear
+        add 长安 34.266667 108.9 Capital
         add 邕州 22.8161 108.3664 Prefecture
         add 柳州 24.3262 109.4284 Prefecture
         add 西受降城 40.765961 107.391206 Town
     公元二〇〇〇年 ren 邕州 南寧
+        update 长安 34.266667 108.9 Province
+        ren 长安 西安
         del  西受降城
         update 柳州 24.3262 110.3 Prefecture
 
@@ -48,10 +51,12 @@ class SpatialTemporalDatabaseTest extends FunSpec with Matchers {
     it("Check 唐高祖武德二年") {
       val snapshot = database(1).snapshot
       val places = snapshot.places
-      places.size should be (3)
+      places.size should be (4)
+      val place0 = places("长安")
       val place1 = places("邕州")
       val place2 = places("柳州")
       val place3 = places("西受降城")
+      (place0 ≈ Place(34.266667, 108.9, PlaceType.Capital)) should be (true)
       (place1 ≈ Place(22.8161, 108.3664, PlaceType.Prefecture)) should be (true)
       (place2 ≈ Place(24.3262, 109.4284, PlaceType.Prefecture)) should be (true)
       (place3 ≈ Place(40.765961, 107.391206, PlaceType.Town)) should be (true)
@@ -60,9 +65,11 @@ class SpatialTemporalDatabaseTest extends FunSpec with Matchers {
     it("Check 公元二〇〇〇年") {
       val snapshot = database(2).snapshot
       val places = snapshot.places
-      places.size should be (2)
+      places.size should be (3)
+      val place0 = places("西安")
       val place1 = places("南寧")
       val place2 = places("柳州")
+      (place0 ≈ Place(34.266667, 108.9, PlaceType.Province)) should be (true)
       (place1 ≈ Place(22.8161, 108.3664, PlaceType.Prefecture)) should be (true)
       (place2 ≈ Place(24.3262, 110.3, PlaceType.Prefecture)) should be (true)
     }
