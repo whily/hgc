@@ -4,11 +4,11 @@ name := "hgc"
 
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.4"
 
 scalacOptions ++= Seq("-optimize", "-deprecation")
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "test"
 
 libraryDependencies += "net.whily" %% "chinesecalendar" % "0.2.1-SNAPSHOT"
 
