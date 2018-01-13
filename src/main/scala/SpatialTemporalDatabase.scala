@@ -61,6 +61,8 @@ class SpatialTemporalDatabase(records: String, val rivers: Array[River])
   private var currentSnapshot: TemporalSnapshot = null
   private var snapshots = MutableList[SnapshotRecord]()
 
+  initialize()
+
   private def removeComments(str: String) = {
     val i = str.indexOf("//")
     var s = str
@@ -69,50 +71,49 @@ class SpatialTemporalDatabase(records: String, val rivers: Array[River])
     s.trim
   }
 
-  private val strs = records.split("\n").map(removeComments).filter(_.length() > 0)
+  private def initialize() {
+    val operations = Set("add", "clear", "del", "update", "ren")
+    val strs = records.split("\n").map(removeComments).filter(_.length() > 0)
 
-  private val operations = Array("add", "clear", "del", "update", "ren")
+    for (str <- strs) {
+      val fields = str.split(" ").filter(_.length() > 0)
+      assert((fields != null) && (!fields.isEmpty) && (fields.length >= 2))
 
-  for (str <- strs) {
-    val fields = str.split(" ").filter(_.length() > 0)
-    assert((fields != null) && (!fields.isEmpty) && (fields.length >= 2))
-    val dateFirst = !operations.contains(fields(0))
-
-    if (dateFirst) {
-      val date = ChineseCalendar.parseDate(fields(0))
-      val operation = fields(1)
-      assert(operations.contains(operation))
-      if (currentDate == null) {
-        // This is the first record.
-        currentSnapshot = TemporalSnapshot(HashMap[String, Place](), River.rivers)
-      } else {
-        assert(ChineseCalendar.toDate(date, false) > ChineseCalendar.toDate(currentDate, false))
-        snapshots += SnapshotRecord(currentDate, currentSnapshot)
-
-        if (operation == "clear") {
+      if (!(operations.contains(fields(0)))) {
+        val date = ChineseCalendar.parseDate(fields(0))
+        val operation = fields(1)
+        assert(operations.contains(operation))
+        if (currentDate == null) {
+          // This is the first record.
           currentSnapshot = TemporalSnapshot(HashMap[String, Place](), River.rivers)
         } else {
-          currentSnapshot = TemporalSnapshot(currentSnapshot.places.clone(), River.rivers)
-        }
-      }
-      currentDate = date
-      if (fields(1) != "clear") {
-        processRecord(fields.drop(1))
-      }
-    } else {
-      assert((currentDate != null) && (fields(0) != "clear"))
-      processRecord(fields)
-    }
-  }
+          assert(ChineseCalendar.toDate(date, false) > ChineseCalendar.toDate(currentDate, false))
+          snapshots += SnapshotRecord(currentDate, currentSnapshot)
 
-  snapshots += SnapshotRecord(currentDate, currentSnapshot)
+          if (operation == "clear") {
+            currentSnapshot = TemporalSnapshot(HashMap[String, Place](), River.rivers)
+          } else {
+            currentSnapshot = TemporalSnapshot(currentSnapshot.places.clone(), River.rivers)
+          }
+        }
+        currentDate = date
+        if (fields(1) != "clear") {
+          processRecord(fields.drop(1))
+        }
+      } else {
+        assert((currentDate != null) && (fields(0) != "clear"))
+        processRecord(fields)
+      }
+    }
+
+    snapshots += SnapshotRecord(currentDate, currentSnapshot)
+  }
 
   // Process one record.
   // The first field of record is the operation (add, del etc).
   // Modify currentSnapshot directly.
   private def processRecord(record: Array[String]) {
     val operation = record(0)
-    assert(operations.contains(operation))
     operation match {
       case "add" | "update" =>
         currentSnapshot.places(record(1)) = Place(record(2).toDouble, record(3).toDouble,
