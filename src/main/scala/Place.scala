@@ -230,7 +230,7 @@ object Place {
         // 湖南觀察使
         add 潭州 28.196111 112.972222 Prefecture // 治所在長沙（今長沙）
         add 邵州 27.25 111.466667 Prefecture // 治所在邵陽縣（今湖南省邵陽市）
-        add 武岡 26.359167 110.310833 County // 縣，属邵州（今湖南省城步苗族自治縣）
+        add 武岡 26.359167 110.310833 County // 治所在武冈縣，属邵州（今湖南省城步苗族自治縣）Place moved??
         add 衡州 26.9 112.6 Prefecture // 治所在衡陽縣（今湖南省衡陽市）
         add 永州 26.2215 111.6169 Prefecture // 治所在零陵縣（今湖南省永州市），GPS data from 零陵區
         add 郴州 25.8 113.05 Prefecture // 治所在郴縣（今湖南省郴州市）
@@ -240,6 +240,38 @@ object Place {
           // （今內蒙古和林格爾北的土城子古城， searched on maps.bing.com for 古城子遗址 then looked up in http://dbsgeo.com/latlon/）
 
         add 洛阳 34.631514 112.454681 Prefecture   // To be confirmed
+
+        // 昭義節度使，又名澤潞節度使
+        add 邢州 37.07 114.505 Prefecture // 治今河北邢臺 To be confirmed
+        add 洺州 36.744 114.544 Prefecture // 治今河北永年東南 To be confirmed
+        add 磁州 36.366667 114.383333 Prefecture // 治今河北磁縣 To be confirmed
+        add 澤州 35.4895 112.8516 Prefecture // 治今山西晉城 To be confirmed
+        add 潞州 36.1953 113.1163 Prefecture  // 治今山西長治市 To be confirmed
+
+        // 義武軍節度使
+        add 定州 38.516 114.99 Prefecture // 治今河北定州市 To be confirmed
+        add 易州 39.349 115.498 Prefecture // 治今河北易縣 To be confirmed
+
+        // 宣武軍節度使
+        add 汴州 34.7975 114.3079 Prefecture // 治今今河南省開封市 To be confirmed
+        add 宋州 34.4146 115.6558 Prefecture // 治今河南省商丘市 To be confirmed
+        add 亳州 33.845 115.778 Prefecture // 治今安徽省亳州市 To be confirmed
+        add 潁州 32.902222 115.83 Prefecture // 治今安徽省阜陽市潁州區 To be confirmed
+
+        // 忠武軍節度使
+        add 許州 34.036 113.852 Prefecture // 治今河南省許昌市 To be confirmed
+        add 陳州 33.733056 114.85 Prefecture // 治今河南省淮陽縣 To be confirmed
+
+        // 山南東道節度使
+        add 襄州 32.066667 112.083333 Prefecture // 治今湖北省襄阳 To be confirmed
+        add 鄧州 32.719133 112.083892 Prefecture // 治今河南省鄧州市 To be confirmed
+        add 隨州 31.6901 113.3825 Prefecture // 治今湖北省隨州 To be confirmed
+        add 唐州 32.731111 113.326944 Prefecture // 治今河南省泌陽縣 To be confirmed
+        add 安州 31.266667 113.666667 Prefecture // 治今湖北省安陸市 To be confirmed
+        add 房州 32.1 110.6 Prefecture // 治今湖北省房縣 To be confirmed
+        add 均州 32.564175 111.512603 Prefecture // 治今湖北省房丹江口市 To be confirmed
+        add 金州 32.6847 109.029 Prefecture // 治今陝西省安康市 To be confirmed
+        add 商州 33.825556 109.997778 Prefecture // 治今陝西省商洛市商州區 To be confirmed
 
         // 魏博節度使
         add 魏州 36.28954 115.11817 Prefecture // 治今河北大名縣 To be confirmed
@@ -375,7 +407,7 @@ object Place {
         ren 陝州 三門峽市 // 三門峽市陝州區 To be confirmed
         ren 虢州 靈寶市 // To be confirmed
         ren 蒲州 永濟市 // 永濟市西南蒲州鎮 To be confirmed
-        // update 长安 34.266667 108.9 Province // To be confirmed
+        update 长安 34.266667 108.9 Province // To be confirmed
         ren 长安 西安
         ren 奉天 乾縣 // To be confirmed
         ren 涇州 涇川 // To be confirmed
@@ -415,7 +447,7 @@ object Place {
         ren 光州 潢川 // To be confirmed
         ren 恆州 正定 // To be confirmed
         ren 趙州 趙縣 // To be confirmed
-        // update 幽州 39.916667 116.383333 Capital
+        update 幽州 39.916667 116.383333 Capital
         ren 幽州 北京
         ren 檀州 密雲 //  To be confirmed
         ren 薊州 薊縣 // To be confirmed
@@ -478,7 +510,7 @@ object Place {
         ren 橫州 橫縣
         ren 賓州 賓陽
         ren 桂州 桂林
-        // update 交州 21.028472 105.854167 Capital
+        update 交州 21.028472 105.854167 Capital
         ren 交州 河內
         ren 邏些城 拉薩
   """
